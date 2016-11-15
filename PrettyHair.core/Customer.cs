@@ -6,11 +6,23 @@ using System.Threading.Tasks;
 
 namespace PrettyHair.core
 {
-    class Customer
+    public class Customer
     {
-        public int CustomerNumber;
-        public string CustomerName;
-        public string CustomerAddress; 
+        public int CustomerNumber { get; set; }
+        public string CustomerName { get; set; }
+        public string CustomerAddress { get; set; } 
+
+        public Customer(int number, string name, string address)
+        {
+            CustomerNumber = number;
+            CustomerName = name;
+            CustomerAddress = address;
+
+        }
+        public Customer()
+        {
+
+        }
         
     }
 }

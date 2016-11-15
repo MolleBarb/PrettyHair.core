@@ -8,17 +8,22 @@ using System.Collections;
 namespace PrettyHair.core
 {   
     
+    
     public class CustomerRepository
     {
-        List<object> Customer;
-        public List<object> FindCustomer()
+        List<Customer> customerList;
+        public List<Customer> FindCustomers()
         {
-            return Customer;
+            
+            return customerList;
         }
 
         public CustomerRepository()
         {
-
+            customerList = new List<Customer>();
+            customerList.Add(new Customer(1, "Pelle", "Glanshatten"));
+            customerList.Add(new Customer(2, "Torben", "Somewhere"));
         }
+
     }
 }
