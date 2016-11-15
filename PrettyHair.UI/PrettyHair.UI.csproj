@@ -49,6 +49,16 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PrettyHair.core\PrettyHair.core.csproj">
+      <Project>{a28ec430-ed00-4762-83cf-b92eebe11c15}</Project>
+      <Name>PrettyHair.core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PrettyHair.Test\PrettyHair.Test.csproj">
+      <Project>{97dbf943-f23e-4d4f-ab2e-e9725bf6549a}</Project>
+      <Name>PrettyHair.Test</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
