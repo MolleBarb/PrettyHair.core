@@ -3,20 +3,29 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using PrettyHair.core;
 
 namespace PrettyHair.UI
 {
     class Program
     {
-        
+      
+
         static void Main(string[] args)
         {          
 
-            Console.WriteLine("Find Costumer by Name, Enter Name:");
-            string CustomerName = Console.ReadLine();
+            Console.WriteLine("Costumerlist:");
+            CustomerRepository cr = new CustomerRepository();
+            List<Customer> customerlist = cr.FindCustomers();
+            customerlist.ForEach(item => Console.Write(item.CustomerNumber.ToString()+ " "
+                                                     + item.CustomerName             + " "
+                                                     + item.CustomerAddress+           "\n"));
 
 
-        
+
+
         }
     }
+
+ 
 }
