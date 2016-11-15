@@ -8,5 +8,9 @@ namespace PrettyHair.core
 {
     class Customer
     {
+        public int CustomerNumber;
+        public string CustomerName;
+        public string CustomerAddress; 
+        
     }
 }
